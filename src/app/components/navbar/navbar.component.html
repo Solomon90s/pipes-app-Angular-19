@@ -1,5 +1,12 @@
-<ul class="menu menu-horizontal flex w-full bg-base-200 rounded-box my-2">
+<!-- <ul class="menu menu-horizontal flex w-full bg-base-200 rounded-box my-2">
   @for (route of routes; track route.path) {
   <li><a [routerLink]="route.path" routerLinkActive="text-accent">{{route.title}}</a></li>
   }
+</ul> -->
+<ul class="menu menu-horizontal flex w-full justify-end bg-base-200 rounded-box my-2">
+  <li><a routerLink="basic" routerLinkActive="text-accent">Pipes Básicos</a></li>
+  <li><a routerLink="numbers" routerLinkActive="text-accent">Pipes Numéricos</a></li>
+  <li><a routerLink="uncommon" routerLinkActive="text-accent">Pipes No tan comunes</a></li>
+  <li><a routerLink="custom" routerLinkActive="text-accent">Pipes Personalizados</a></li>
+  <app-theme-controller class="flex content-center" />
 </ul>
