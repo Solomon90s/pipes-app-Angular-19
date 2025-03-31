@@ -2,6 +2,11 @@
 
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.1.7.
 
+For the visual part, I used [TailwindCSS](https://tailwindcss.com/) version 4.0.15, and [daisyUI](https://daisyui.com/docs/install/) version 5.0.9.
+
+## Demo
+![Pipes App!](/docs/pipes.gif)
+
 ## Development server
 
 To start a local development server, run:
