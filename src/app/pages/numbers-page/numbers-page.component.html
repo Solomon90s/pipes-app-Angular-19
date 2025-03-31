@@ -1,37 +1,40 @@
 <section class="mx-5">
-  <h1 class="text-2xl font-bold">Pipes Numéricos</h1>
-  <h3 class="text-xl font-thin">Pipes incluidos en Angular</h3>
+  <h1 class="text-3xl font-bold">Pipes Numéricos</h1>
+  <h2 class="text-2xl font-thin">Pipes incluidos en Angular</h2>
 </section>
 
 <div class="stats stats-vertical lg:stats-horizontal shadow w-full">
   <div class="stat">
     <!--1.2-2 Significa quiero toda la parte entera y que tenga dos decimales-->
     <div class="stat-title">Number: '1.2-2'</div>
-    <div class="stat-value">{{ totalSells() | number: "1.2-2" }}</div>
-    <div class="stat-desc">Original: {{totalSells()}} </div>
+    <div class="stat-value">{{ totalSells() | number : "1.2-2" }}</div>
+    <div class="stat-desc">Original: {{ totalSells() }}</div>
   </div>
 
   <div class="stat">
     <!--1.1-2 Significa quiero toda la parte entera y que tenga entre 1 y 2 decimales-->
     <div class="stat-title">Number: '1.1-2'</div>
-    <div class="stat-value">{{ totalSells() + 1234 | number: "1.1-2" }}</div>
-    <div class="stat-desc">Original: {{totalSells()}} </div>
+    <div class="stat-value">{{ totalSells() + 1234 | number : "1.1-2" }}</div>
+    <div class="stat-desc">Original: {{ totalSells() }}</div>
   </div>
 
   <div class="stat">
     <div class="stat-title">Currency</div>
-    <div class="stat-value">{{totalSells() | currency:'EUR': 'symbol-narrow': '1.4-4'}} </div>
-    <div class="stat-desc">Original: {{totalSells()}} </div>
+    <div class="stat-value">
+      {{ totalSells() | currency : "EUR" : "symbol-narrow" : "1.4-4" }}
+    </div>
+    <div class="stat-desc">Original: {{ totalSells() }}</div>
   </div>
 
   <div class="stat">
     <div class="stat-title">Percentage</div>
-    <div class="stat-value">{{percent() | percent}}</div>
-    <div class="stat-desc">Original: {{percent()}} </div>
+    <div class="stat-value">{{ percent() | percent }}</div>
+    <div class="stat-desc">Original: {{ percent() }}</div>
   </div>
 
   <div class="stat">
     <div class="stat-title">Percentage</div>
-    <div class="stat-value">{{percent() | percent:'1.2-2'}}</div>
-    <div class="stat-desc">Original: {{percent()}} </div>
+    <div class="stat-value">{{ percent() | percent : "1.2-2" }}</div>
+    <div class="stat-desc">Original: {{ percent() }}</div>
   </div>
+</div>
